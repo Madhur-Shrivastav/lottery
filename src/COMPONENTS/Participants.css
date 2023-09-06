@@ -1,0 +1,169 @@
+:root {
+  --primary-color1: #1c1c1c;
+  --background--color1: #0e0a1b;
+  --primary-color2: #0e0a1b;
+  --background--color2: #1c1c1c;
+}
+
+#parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: url("pexels-photo-building.jpg") no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-color: var(--background--color2);
+  width: 100%;
+  font-family: monospace;
+  font-size: 16px;
+}
+#navbar,
+#participantsbar {
+  color: white;
+}
+
+h4 {
+  margin: 15px;
+  font-size: 20px;
+}
+button {
+  margin: 20px;
+  font-size: 20px;
+  font-family: monospace;
+  border-radius: 10px;
+  background-color: var(--background--color2);
+  color: white;
+}
+input:hover ~ label {
+  font-size: 20px;
+}
+input:focus ~ label {
+  display: none;
+}
+button:hover {
+  background: linear-gradient(yellow, red);
+  border: 2px solid;
+  font-size: 25px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#lottery-details-box {
+  color: black;
+  margin-block: 20px;
+  position: relative;
+  height: 395px;
+  width: 735px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#lottery-details-box::before {
+  content: "";
+  position: absolute;
+  width: 820px;
+  height: 820px;
+  background: linear-gradient(yellow, red);
+  z-index: 1;
+}
+
+#lottery-details {
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 390px;
+  width: 730px;
+  overflow: hidden;
+}
+/*/ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.manager-participant-box {
+  color: black;
+  margin-block: 20px;
+  position: relative;
+  height: 420px;
+  width: 840px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.manager-participant-box::before {
+  content: "";
+  position: absolute;
+  width: 950px;
+  height: 925px;
+  background: linear-gradient(yellow, red);
+}
+#participant-form {
+  z-index: 1;
+  color: black;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 835px;
+  height: 415px;
+}
+#numberoftickets-input,
+#name-input {
+  margin: 15px;
+}
+#numberoftickets,
+#name {
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  color: black;
+  border-bottom: 2px solid;
+}
+
+#request-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#card-container {
+  width: 615px;
+  height: 240px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#card-container::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  background: linear-gradient(yellow, red);
+}
+#card {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 610px;
+  height: 235px;
+  color: black;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
